@@ -1,14 +1,32 @@
+<%@ page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Login form UI Design</title>
+  <title>INGRESA MEDPETS</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
+<%
+		//base de datos
+	Connection con;
+	String url = "jdbc:mysql://localhost:3306/coo_practica";
+	String Driver = "com.mysql.jdbc.Driver";
+	String user = "root";
+	String clave = "";
+	Class.forName(Driver);
+	con = DriverManager.getConnection(url, user, clave);
+	PreparedStatement ps;
+	//Emnpezamos Listando los Datos de la Tabla Usuario
+	Statement smt;
+	ResultSet rs;
+	smt = con.createStatement();
+	rs = smt.executeQuery("select * from db_coo");
+	%>
+	
 <!-- partial:index.partial.html -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
@@ -59,8 +77,8 @@
   <button class="register">
     <span>registrar</span>
   </button>
-  <button class="signin">
-    <span>ingresar</span>
+  <button class="signin" >
+    <span>ingresar </span>
   </button>
   <h3>Tu registro esta completo !</h3>
   <h3>Tu ingreso esta completo !</h3>
@@ -70,6 +88,7 @@
  
  
 </div>
+
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
 
