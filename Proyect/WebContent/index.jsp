@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,16 +82,16 @@
 				<div class="menu_block">
 					<nav>
 						<ul class="sf-menu">
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li class="with_ul"><a href="about-us.html">Sobre
+							<li class="current"><a href="index.jsp">Inicio</a></li>
+							<li class="with_ul"><a href="Sobre-nosotros.jsp">Sobre
 									nosotros</a> <!-- <ul>
 									<li><a href="#"></a></li>
 									<li><a href="#"></a></li>
 									<li><a href="#"><span></span></a></li>
 								</ul> --></li>
-							<li><a href="services.html">Servicios</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contacts.html">Contactanos </a>
+							<li><a href="services.jsp">Servicios</a></li>
+							<li><a href="blog.jsp">Blog</a></li>
+							<li><a href="contacts.jsp">Contactanos </a>
 								<ul>
 									<li><a href="https://www.facebook.com/">Facebook</a></li>
 									<li><a href="https://web.whatsapp.com/">Whatsapp</a></li>
@@ -116,7 +118,7 @@
 						<li><img src="https://hddesktopwallpapers.in/wp-content/uploads/2015/09/cocker-spaniel-wallpaper.jpg" alt="">
 							<div class="banner">
 								Ellos necesitan tu <span>amor</span> y <i> cuidado</i>
-								<p>Es tan f√°cil hacerlas felices</p>
+								<p>Es tan f·cil hacerlas felices</p>
 							</div></li>
 							
 						<li><img src="images/slide1.jpg" alt="">

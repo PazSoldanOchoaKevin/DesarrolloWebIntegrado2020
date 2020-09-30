@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="HelloUTP" path="/HelloUTP" reloadable="true" source="org.eclipse.jst.jee.server:HelloUTP"/><Context docBase="Proyect-BD" path="/Proyect-BD" reloadable="true" source="org.eclipse.jst.jee.server:Proyect-BD"/><Context docBase="BD" path="/BD" reloadable="true" source="org.eclipse.jst.jee.server:BD"/><Context docBase="Proyect" path="/Proyect" reloadable="true" source="org.eclipse.jst.jee.server:Proyect"/><Context docBase="Formulario" path="/Formulario" reloadable="true" source="org.eclipse.jst.jee.server:Formulario"/></Host>
+      <Context docBase="HelloUTP" path="/HelloUTP" reloadable="true" source="org.eclipse.jst.jee.server:HelloUTP"/><Context docBase="Proyect-BD" path="/Proyect-BD" reloadable="true" source="org.eclipse.jst.jee.server:Proyect-BD"/><Context docBase="BD" path="/BD" reloadable="true" source="org.eclipse.jst.jee.server:BD"/><Context docBase="Proyect" path="/Proyect" reloadable="true" source="org.eclipse.jst.jee.server:Proyect"/><Context docBase="Formulario" path="/Formulario" reloadable="true" source="org.eclipse.jst.jee.server:Formulario"/><Context docBase="Lista_proyecto1" path="/Lista_proyecto1" reloadable="true" source="org.eclipse.jst.jee.server:Lista_proyecto1"/></Host>
     </Engine>
   </Service>
 </Server>

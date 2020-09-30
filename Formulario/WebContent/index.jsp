@@ -81,7 +81,7 @@
     <span>ingresar </span>
   </button>
   <h3>Tu registro esta completo !</h3>
-  <h3>Tu ingreso esta completo !</h3>
+  <h3><a href="http://localhost:8081/Lista_proyecto1/index.jsp">Tu ingreso esta completo !</a></h3>
   <div class="reg"></div>
   <div class="sig"></div>
 

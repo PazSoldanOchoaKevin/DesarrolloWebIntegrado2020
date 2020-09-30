@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,16 +36,16 @@ jQuery(document).ready(function () {
       <div class="menu_block">
         <nav>
 						<ul class="sf-menu">
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li class="with_ul"><a href="about-us.html">Sobre
+							<li class="current"><a href="index.jsp">Inicio</a></li>
+							<li class="with_ul"><a href="Sobre-nosotros.jsp">Sobre
 									nosotros</a> <!-- <ul>
 									<li><a href="#"></a></li>
 									<li><a href="#"></a></li>
 									<li><a href="#"><span></span></a></li>
 								</ul> --></li>
-							<li><a href="services.html">Servicios</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contacts.html">Contactanos </a>
+							<li><a href="services.jsp">Servicios</a></li>
+							<li><a href="blog.jsp">Blog</a></li>
+							<li><a href="contacts.jsp">Contactanos </a>
 								<ul>
 									<li><a href="https://www.facebook.com/">Facebook</a></li>
 									<li><a href="https://web.whatsapp.com/">Whatsapp</a></li>
@@ -65,7 +67,7 @@ jQuery(document).ready(function () {
 <div class="content pt1">
   <div class="container_12">
     <div class="grid_6">
-      <h2>Contact Info</h2>
+      <h2>Informacion </h2>
       <br>
       <div class="map">
         <figure class="img_inner">
@@ -86,7 +88,7 @@ jQuery(document).ready(function () {
       </div>
     </div>
     <div class="grid_5 prefix_1">
-      <h2 class="ic1">Contact Form</h2>
+      <h2 class="ic1">Contactanos </h2>
       <form id="form" action="#">
         <div class="success_wrapper">
           <div class="success">Contact form submitted!<br>
@@ -94,7 +96,7 @@ jQuery(document).ready(function () {
         </div>
         <fieldset>
           <label class="name">
-            <input type="text" value="Name:">
+            <input type="text" value="Nombre:">
             <br class="clear">
             <span class="error error-empty">*This is not a valid name.</span><span class="empty error-empty">*This field is required.</span> </label>
           <label class="email">
@@ -102,7 +104,7 @@ jQuery(document).ready(function () {
             <br class="clear">
             <span class="error error-empty">*This is not a valid email address.</span><span class="empty error-empty">*This field is required.</span> </label>
           <label class="phone">
-            <input type="tel" value="Phone:">
+            <input type="tel" value="Celular:">
             <br class="clear">
             <span class="error error-empty">*This is not a valid phone number.</span><span class="empty error-empty">*This field is required.</span> </label>
           <label class="message">
@@ -110,7 +112,7 @@ jQuery(document).ready(function () {
             <br class="clear">
             <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
           <div class="clear"></div>
-          <div class="btns"><a data-type="reset" class="btn">Clear</a><a data-type="submit" class="btn">Send</a>
+          <div class="btns"><a data-type="reset" class="btn">Limpiar</a><a data-type="submit" class="btn">enviar</a>
             <div class="clear"></div>
           </div>
         </fieldset>

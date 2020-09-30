@@ -50,37 +50,38 @@
 			<tbody id="tbodys">
 
 				<%
-			while(rs.next()) {
-				
-			%>
+					while (rs.next()) {
+				%>
 
 				<tr>
 					<td class="text-center"><%=rs.getInt("Id")%></td>
-					<td><%= rs.getString("Nombres")%></td>
-					<td class="text-center"><%= rs.getString("DNI")%></td>
-					<td class="text-center">
-					<a href="Editar.jsp?id=<>"
-						class="btn btn-primary">Editar</a>
-					 <a href="Delete.jsp?id=<> "
+					<td><%=rs.getString("Nombres")%></td>
+					<td class="text-center"><%=rs.getString("DNI")%></td>
+					<td class="text-center"><a href="Editar.jsp?id=<>"
+					
+						class="btn btn-primary">Editar</a> <a href="Delete.jsp?id=<> "
 						class="btn btn-danger">Delete</a></td>
 				</tr>
-				<%}%>
+				<%
+					}
+				%>
 			
 		</table>
 	</div>
 	<div class="container">
 		<%
-		Class.forName(Driver);
-		con=DriverManager.getConnection(url,user,clave);
+			Class.forName(Driver);
+		con = DriverManager.getConnection(url, user, clave);
 		String dni, nom;
-		nom=request.getParameter("txtNom");
-		dni=request.getParameter("txtDNI");
-		if(nom!=null && dni!=null){
-			ps=con.prepareStatement("insert into persona1(Nombres, DNI)values('"+nom+"','"+dni+"')");
+		nom = request.getParameter("txtNom");
+		dni = request.getParameter("txtDNI");
+		if (nom != null && dni != null) {
+			ps = con.prepareStatement("insert into persona1(Nombres, DNI)values('" + nom + "','" + dni + "')");
 			ps.executeUpdate();
 			// response.sendRedirect("index.jsp");
-			
-		}%>
+
+		}
+		%>
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document"

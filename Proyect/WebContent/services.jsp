@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,21 +31,21 @@
 		<div class="container_12">
 			<div class="grid_12">
 				<h1>
-					<a href="index.html"><img src="images/logo.png" alt=""></a>
+					<a href="index.jsp"><img src="images/logo.png" alt=""></a>
 				</h1>
 				<div class="menu_block">
 					<nav>
 						<ul class="sf-menu">
-							<li class="current"><a href="index.html">Inicio</a></li>
-							<li class="with_ul"><a href="about-us.html">Sobre
+							<li class="current"><a href="index.jsp">Inicio</a></li>
+							<li class="with_ul"><a href="Sobre-nosotros.jsp">Sobre
 									nosotros</a> <!-- <ul>
 									<li><a href="#"></a></li>
 									<li><a href="#"></a></li>
 									<li><a href="#"><span></span></a></li>
 								</ul> --></li>
-							<li><a href="services.html">Servicios</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contacts.html">Contactanos </a>
+							<li><a href="services.jsp">Servicios</a></li>
+							<li><a href="blog.jsp">Blog</a></li>
+							<li><a href="contacts.jsp">Contactanos </a>
 								<ul>
 									<li><a href="https://www.facebook.com/">Facebook</a></li>
 									<li><a href="https://web.whatsapp.com/">Whatsapp</a></li>
