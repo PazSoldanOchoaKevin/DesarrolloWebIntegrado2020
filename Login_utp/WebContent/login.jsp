@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V19</title>
+	<title>Site</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -30,6 +30,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
+
 	
 	<div class="limiter">
 		<div class="container-login100">
@@ -72,7 +73,7 @@
 							Create una cuenta?
 						</span>
 
-						<a href="#" class="txt2 hov1">
+						<a href="http://localhost:8082/Login_utp/register/register.jsp" class="txt2 hov1">
 							Registrar
 						</a>
 					</div>
